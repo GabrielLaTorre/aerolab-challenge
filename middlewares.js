@@ -4,7 +4,7 @@ const NodeCache = require('node-cache');
 const myCache = new NodeCache({ stdTTL: 600 }); // 10 minutes
 
 const getProducts = async (req, res, next) => {
-
+    console.log(process.env.PRODUCTS_URL)
     try {
         let data;
 
